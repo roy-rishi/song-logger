@@ -2,6 +2,7 @@ data/*
 !data/schema.json
 venv
 cred.py
+.cache
 
 __pycache__
 .DS_Store
