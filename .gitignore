@@ -1,5 +1,5 @@
 data/*
-!data/scheme.json
+!data/schema.json
 
 __pycache__
 .DS_Store
