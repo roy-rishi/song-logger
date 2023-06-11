@@ -1,5 +1,5 @@
 # song-logger
- Log songs playing on Spotify
+ Log songs playing on Spotify.
  These logs can be processed with [roy-rishi/spotify-data-processor](https://github.com/roy-rishi/spotify-data-processor), or any other utility
 
 ## set-up
