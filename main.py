@@ -4,6 +4,7 @@ import vars
 from datetime import datetime
 import json
 import time
+import subprocess
 
 
 def authenticate():
@@ -174,6 +175,7 @@ while True:
             print(f"\nwatching {song['master_metadata_track_name']}")
     except Exception as e:
         print(e)
+        subprocess.call(["osascript", "-e", f'tell application "Messages" to send "ERROR(song-logger): {e}" to buddy "{vars.IMESSAGE_USER}"'])
         print("reauthenticating")
         sp = authenticate()
 
