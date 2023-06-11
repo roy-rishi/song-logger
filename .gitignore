@@ -2,7 +2,7 @@ data/*
 !data/schema.json
 !now-playing-schema.json
 venv
-cred.py
+vars.py
 .cache
 
 __pycache__
