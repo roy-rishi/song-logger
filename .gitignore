@@ -1,6 +1,7 @@
 data/*
 !data/schema.json
 !now-playing-schema.json
+!template.json
 venv
 vars.py
 .cache

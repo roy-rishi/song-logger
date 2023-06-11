@@ -15,4 +15,5 @@ DATA_PATH="data/streaming-history-2022-23-all.json"
 `pip install spotipy==2.23.0`
 
 ## usage
+the program with append logs to either files downloaded from [https://www.spotify.com/us/account/privacy/](Spotify's Extended streaming history), or the  template in [/data](/.data)
 `python main.py`

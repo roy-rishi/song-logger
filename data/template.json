@@ -1,0 +1,27 @@
+[
+  {
+    "ts": "2023-06-10T23:11:40Z",
+    "username": "unknown",
+    "platform": "unknown",
+    "ms_played": 275666,
+    "conn_country": "unknown",
+    "ip_addr_decrypted": "unknown",
+    "user_agent_decrypted": "unknown",
+    "master_metadata_track_name": "Supercut",
+    "master_metadata_album_artist_name": [
+      "Lorde"
+    ],
+    "master_metadata_album_album_name": "Melodrama",
+    "spotify_track_uri": "spotify:track:6K8VQ84MqhsoakN5MjrnVR",
+    "episode_name": "unknown",
+    "episode_show_name": "unknown",
+    "spotify_episode_uri": "unknown",
+    "reason_start": "unknown",
+    "reason_end": "unknown",
+    "shuffle": true,
+    "skipped": "unknown",
+    "offline": "unknown",
+    "offline_timestamp": "unknown",
+    "incognito_mode": "unknown"
+  }
+]
