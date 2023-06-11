@@ -1,5 +1,6 @@
 # song-logger
  Log songs playing on Spotify
+ These logs can be with [https://github.com/roy-rishi/spotify-data-processor](roy-rishi/spotify-data-processor), or any other utility
 
 ## set-up
 write the following to [vars.py](./vars.py)
