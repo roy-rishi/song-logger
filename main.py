@@ -174,4 +174,7 @@ while True:
             print(f"\nwatching {song['master_metadata_track_name']}")
     except Exception as e:
         print(e)
+        print("reauthenticating")
+        sp = authenticate()
+
     time.sleep(interval)
