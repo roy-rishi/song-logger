@@ -48,8 +48,9 @@ def trackName(playing):
 def trackURI(playing):
     return playing["item"]["uri"]
 
-def context(playing):
-    return playing["context"]["uri"]
+# can cause errors (probably when no context, such as when playing from "Top tracks this month")
+# def context(playing):
+#     return playing["context"]["uri"]
 
 def progressMs(playing):
     return playing["progress_ms"]
@@ -95,15 +96,9 @@ def songItem(ts, platform, msPlayed, trackName, artistName, albumName, trackURI,
 def initSong(playing):
 
     artist_names = artistNames(playing)
-    artist_uris = artistURIs(playing)
     album_name = albumName(playing)
-    album_uri = albumURI(playing)
     track_name = trackName(playing)
     track_uri = trackURI(playing)
-    context_uri = context(playing)
-    ms_progress = progressMs(playing)
-    ms_duration = durationMs(playing)
-    is_playing = isPlaying(playing)
     shuffle = shuffleState(playing)
     ts = currentTimeFormatted()
 
