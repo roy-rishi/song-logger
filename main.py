@@ -170,7 +170,8 @@ while True:
             print(f"\nwatching {song['master_metadata_track_name']}")
     except Exception as e:
         print(e)
-        subprocess.call(["osascript", "-e", f'tell application "Messages" to send "ERROR(song-logger): {e}" to buddy "{vars.IMESSAGE_USER}"'])
+        # text error message
+        # subprocess.call(["osascript", "-e", f'tell application "Messages" to send "ERROR(song-logger): {e}" to buddy "{vars.IMESSAGE_USER}"'])
         print("reauthenticating")
         sp = authenticate()
 
