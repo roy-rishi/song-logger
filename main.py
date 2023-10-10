@@ -1,7 +1,7 @@
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 import vars
-from datetime import datetime
+from datetime import datetime, timezone
 import json
 import time
 import subprocess
@@ -65,7 +65,8 @@ def shuffleState(playing):
     return bool(playing["shuffle_state"])
 
 def currentTimeFormatted():
-    return datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+    date_utc = datetime.now().astimezone(timezone.utc)
+    return date_utc.strftime("%Y-%m-%d %H:%M:%S %z")
 
 def songItem(ts, platform, msPlayed, trackName, artistName, albumName, trackURI, reasonStart, reasonEnd, shuffle, skipped, incognito):
     template = {
