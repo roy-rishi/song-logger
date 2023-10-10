@@ -20,3 +20,6 @@ IMESSAGE_USER=""
 ## usage
 the program with append logs to either files downloaded from [https://www.spotify.com/us/account/privacy/](Spotify's Extended streaming history), or the  template in [/data](/.data)
 `python main.py`
+
+## notes
+* note that the logger logs the timestamp of when the stream started, while spotify logs when the stream ended
